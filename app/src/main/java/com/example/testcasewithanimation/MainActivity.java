@@ -4,16 +4,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.example.testcasewithanimation.databinding.ActivityMainBinding;
+
 public class MainActivity extends AppCompatActivity {
+
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
         Anim animForText = new Anim(this);
 
-        animForText.initHelloTextView(findViewById(R.id.main_text));
-        animForText.initMainBox(findViewById(R.id.main_box));
+        animForText.initHelloTextView(binding.mainText);
+        animForText.initMainBox(binding.mainBox);
     }
 }

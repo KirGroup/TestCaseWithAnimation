@@ -42,8 +42,8 @@ public class Anim {
 
             String country = Locale.getDefault().getLanguage();
             if(country.equals("US")){
-                activityMainText.setTextColor(Color.BLUE);
-            } else activityMainText.setTextColor(Color.RED);
+                activityMainText.setTextColor(Color.RED);
+            } else activityMainText.setTextColor(Color.BLUE);
 
             startMoveText(mainBox.getHeight());
 
