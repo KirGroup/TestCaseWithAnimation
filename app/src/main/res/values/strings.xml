@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TestCaseWithAnimation</string>
+    <string name="main_text">Hello</string>
+</resources>
